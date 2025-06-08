@@ -18,7 +18,7 @@ create config.properties under src/test/resources and replace YOUR_API_KEY_HERE 
 propertiesapi.key=YOUR_ACTUAL_API_KEY_HERE
 
 
-3. Run Tests
+Run Tests
 mvn test
 
 Important Notes
