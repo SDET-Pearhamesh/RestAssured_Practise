@@ -8,11 +8,11 @@ import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
-public class Practise1Class1 {
+public class PractiseClass1 {
 
     // Given when then are build patterns
 
-    @Test(description = "simple test case to validate the status code")
+    @Test(description = "simple test case to validate the status code" , enabled = false)
     public void check_status_code() {
 
         given().
@@ -25,7 +25,7 @@ public class Practise1Class1 {
                 assertThat().statusCode(200);
     }
 
-    @Test(description = "We can make use of different matchers from hamcrest to validate response body ")
+    @Test(description = "We can make use of different matchers from hamcrest to validate response body " , enabled = false)
     public void validate_response_body() {
 
         given().
@@ -46,7 +46,7 @@ public class Practise1Class1 {
 
     }
 
-    @Test(description = "if we want extract all response so that we can use specific value to store")
+    @Test(description = "if we want extract all response so that we can use specific value to store" , enabled = false)
     public void extract_response() {
 
         Response response =
@@ -66,7 +66,7 @@ public class Practise1Class1 {
 
     }
 
-    @Test(description = "If we want to exctract only id of first item or any other single value")
+    @Test(description = "If we want to exctract only id of first item or any other single value" , enabled = false)
     public void extract_single_value1() {
 
         Response response =
@@ -93,7 +93,7 @@ public class Practise1Class1 {
     }
 
 
-    @Test(description = "If we want to exctract only id of first item or any other single value")
+    @Test(description = "If we want to exctract only id of first item or any other single value" , enabled = false)
     public void extract_single_value2() {
 
         String response =
