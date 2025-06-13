@@ -23,6 +23,7 @@ public class PractiseClass2 {
                 when().
                         get("/workspaces").
                 then().
+                        log().all().
                         assertThat().
                         statusCode(200).
                         extract().response().path("workspaces[0].name");
