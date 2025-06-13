@@ -10,7 +10,7 @@ Postman API Key
 Setup Instructions
 
 1. Clone the Repository
-bashgit clone <your-repo-url>
+git clone <your-repo-url>
 cd RestAssured_Practice
 
 2. Configure API Key
