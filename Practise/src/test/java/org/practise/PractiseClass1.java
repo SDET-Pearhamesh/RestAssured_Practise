@@ -93,7 +93,7 @@ public class PractiseClass1 {
     }
 
 
-    @Test(description = "If we want to exctract only id of first item or any other single value" , enabled = false)
+    @Test(description = "If we want to exctract only id of the first item or any other single value")
     public void extract_single_value2() {
 
         String response =

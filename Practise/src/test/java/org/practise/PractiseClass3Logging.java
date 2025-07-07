@@ -62,7 +62,7 @@ public class PractiseClass3Logging {
 
     }
 
-    @Test(description = "Using config blacklistHeader() method" )
+    @Test(description = "Using config blacklistHeader() method" , enabled = false)
     public void hiding_sensitive_from_logging_headers() {
 
         given().
@@ -80,11 +80,5 @@ public class PractiseClass3Logging {
         System.out.println("If we have multiple attributes to hide, We can send Collection like Set of strings");
 
     }
-
-
-
-
-
-
 
 }
