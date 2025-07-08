@@ -4,9 +4,8 @@ import io.restassured.config.LogConfig;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
 
-public class PractiseClass3Logging {
+public class PractiseClass3 {
 
     @Test(description = "We can log required thing in both request and response" , enabled = false)
     public void few_handy_assertions_Byhamecrest() {
