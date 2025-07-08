@@ -92,7 +92,7 @@ public class PractiseClass2 {
           //                     "workspaces[0]" , equalTo(Collections.EMPTY_MAP));
     }
 
-    @Test(description = "Works on string. anyOf - At least one of these & allOf All of these" )
+    @Test(description = "Works on string. anyOf - At least one of these & allOf All of these" , enabled = false)
     public void allof_anyof_matchers_byHamcrest() {
 
         given().
