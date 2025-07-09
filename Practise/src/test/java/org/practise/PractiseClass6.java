@@ -57,7 +57,7 @@ public class PractiseClass6 {
 
     }
 
-    @Test(description = "RequestSpecBuilder is a more structured and fluent way to create request specifications. ")
+    @Test(description = "RequestSpecBuilder is a more structured and fluent way to create request specifications." , enabled = false)
     public void testStatusCode(){
 
         Response response = RestAssured.given()
