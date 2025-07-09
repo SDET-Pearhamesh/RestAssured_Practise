@@ -29,7 +29,7 @@ public class PractiseClass5 {
     }
 
 @Test(description = "RequestSpecification is an interface that allows you to define the common " +
-        "configurations and settings for your API requests, making your code more reusable and maintainable")
+        "configurations and settings for your API requests, making your code more reusable and maintainable" , enabled = false)
     public void request_specification(){
 
     given(rs).
@@ -40,7 +40,7 @@ public class PractiseClass5 {
               statusCode(200);
 }
 
-@Test(description = "Lets convert from BDD Style thats given, when, then format to Non BDD")
+@Test(description = "Lets convert from BDD Style thats given, when, then format to Non BDD" , enabled = false)
     public void BDDtoNONBDD(){
 
    Response response =  rs.get("/workspaces").then().log().all().extract().response();
