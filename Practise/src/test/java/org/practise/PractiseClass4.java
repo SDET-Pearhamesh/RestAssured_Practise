@@ -1,5 +1,7 @@
 package org.practise;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.http.Headers;
 import org.hamcrest.Description;
 import org.testng.annotations.Test;
@@ -34,6 +36,28 @@ public class PractiseClass4 {
                 log().all().
                 assertThat().
                 statusCode(200);
+
+    }
+
+    @Test(description = "serilization - Java to JSON conversion" , enabled = false)
+    public void serialization() throws JsonProcessingException {
+
+        //  We are sending payload using HashMap - Here serialization happens automatically (Rest Assured built that way)
+
+        HashMap<String , String > headers = new HashMap<>();
+
+        headers.put("x-api-key" , ConfigUtil.getApiKey());
+        headers.put("key 1 " , " value 1");
+        headers.put("key 2 " , " value 2");
+        headers.put("key 3 " , " value 3");
+
+       // We are using ObjectMapper to serialize so now REST Assured will not serialize the payload
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        String payload = objectMapper.writeValueAsString(headers);
+
+       System.out.println(payload);
+       System.out.println(headers);
 
     }
 

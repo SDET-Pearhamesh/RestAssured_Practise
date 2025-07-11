@@ -47,7 +47,7 @@ public class PractiseClass12 {
                         statusCode(200);
     }
 
-    @Test(description = "Using Filters we can store logs in seperate file")
+    @Test(description = "Using Filters we can store logs in seperate file" , enabled = false)
     public void logging_Using_Filter_in_file() throws FileNotFoundException {
 
         PrintStream fileOutPutStream = new PrintStream((new File("mylogs1.log")));
@@ -63,7 +63,7 @@ public class PractiseClass12 {
                         statusCode(200);
     }
 
-    @Test(description = "Modifying the above code and using requesr and response specification")
+    @Test(description = "Modifying the above code and using requesr and response specification" , enabled = false)
     public void logging_using_filter() throws FileNotFoundException {
 
         // This should be in before class
