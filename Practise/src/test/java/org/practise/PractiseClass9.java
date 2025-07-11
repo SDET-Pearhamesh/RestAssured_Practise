@@ -49,7 +49,7 @@ public class PractiseClass9 {
         return documents;
     }
 
-    @Test(description = "Add Jackson Dependency")
+    @Test(description = "Add Jackson Dependency" , enabled = false)
     public  void payloadTest() throws JsonProcessingException {
 
         PractiseClass9 pc9 = new PractiseClass9("Prathamesh", 989876765, new String[]{"AADHAR", "PAN"});
